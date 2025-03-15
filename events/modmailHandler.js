@@ -70,13 +70,13 @@ module.exports = async (client) => {
 
         
         const embed = new EmbedBuilder()
-            .setTitle(`Mail from ${message.author.tag}`)
+            .setTitle(`Modmail from ${message.author.tag}`)
             .setDescription(`User **${message.author}** has initiated a Mail conversation.`)
             .setColor('#FFFF00');
 
         const closeButton = new ButtonBuilder()
             .setCustomId('close_modmail')
-            .setLabel('Close Mail')
+            .setLabel('Close Modmail')
             .setStyle(ButtonStyle.Danger);
 
         const row = new ActionRowBuilder().addComponents(closeButton);
@@ -85,13 +85,13 @@ module.exports = async (client) => {
 
         const Embed = new EmbedBuilder()
         .setAuthor({
-            name: "Mail Alert",
+            name: "Modmail Alert",
             iconURL: Icons.tick2Icon,
-            url: "https://discord.gg/xQF9f9yUEM"
+            url: "https://discord.gg/xgYzzB9SEh"
         })
         .setDescription(`Mail has been started. You can now chat with the staff.`)
         .setColor('Green')
-        .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon });
+        .setFooter({ text: 'HexaAds!', iconURL: Icons.modIcon });
         message.author.send({ embeds: [Embed]});
     });
 
@@ -134,11 +134,11 @@ module.exports = async (client) => {
                 .setAuthor({
                     name: "Mail Alert",
                     iconURL: Icons.tick2Icon,
-                    url: "https://discord.gg/xQF9f9yUEM"
+                    url: "https://discord.gg/xgYzzB9SEh"
                 })
-                .setDescription('Your Mail conversation has been closed by the staff. Thank you for reaching out.')
+                .setDescription('Your Modmail conversation has been closed by the staff. Thank you for reaching out.')
                 .setColor('Red')
-                .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon });
+                .setFooter({ text: 'HexaAds', iconURL: Icons.modIcon });
                 await user.send({ embeds: [embed]});
             }
 
