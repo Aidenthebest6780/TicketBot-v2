@@ -27,9 +27,9 @@ module.exports = {
     once: true,
     execute(client) {
         const activities = [
-            { name: 'VALORANT', type: ActivityType.Playing },
-            { name: 'Netflix', type: ActivityType.Watching },
-            { name: 'Fortnite', type: ActivityType.Competing }
+            { name: 'DM for support', type: ActivityType.Playing },
+            { name: 'DM for support', type: ActivityType.Watching },
+            { name: 'DM for support', type: ActivityType.Competing }
         ];
 
         const statuses = ['idle', 'dnd'];
